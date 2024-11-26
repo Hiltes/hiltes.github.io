@@ -240,30 +240,41 @@ li {
 }
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.2rem;
-    gap: 2px;
+    font-size: 1.5rem;
+    gap: 1px;
+  }
+  header h1 img {
+    width: 20px;
+    height: auto;
   }
   nav ul {
-    flex-direction: column;
-    gap: 1px;
+    flex-direction: row;
+    gap: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 1px;
     margin-top: 0;
-
+    font-size: 0.5rem;
   }
+  nav ul li a {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    text-decoration: none;
+    color: var(--srebrny);
+}
+nav ul li a i {
+  margin-bottom: 5px; 
+}
+
 
   main{
     margin-top: 200px;
   }
 
  
-  header h1 img {
-    width: 20px;
-    height: auto;
-  
-}
+ 
 }
 
 @media (max-width: 480px) {
